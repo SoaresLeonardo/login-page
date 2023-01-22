@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --login-image-color: #8956e9;
+  --form-login-color: #282a32;
+  --background-body: #1d1e23;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-body);
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  width: 195px;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 50%;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.signup-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--login-image-color);
+  overflow: hidden;
+  height: 200px;
+}
+
+.signup-image img {
+  width: 200px;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: var(--form-login-color);
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--login-image-color);
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  border: 1px solid #cccbcb33;
+  padding: 0.8rem;
+  border-radius: 3px;
+  width: 450px;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  background: none;
+  color: white;
+  outline: none;
+}
+
+.input-box input:hover {
+  border: 1px solid #7a7979;
+}
+
+.input-box label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.create-account-button button {
+  background-color: var(--login-image-color);
+  width: 200px;
+  padding: 1rem;
+  float: right;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.create-account-button  button:hover {
+  background-color: #9968f5;
+}
+
+.login-account {
+  margin-top: 90px;
+}
+
+.login-account a {
+  color: var(--login-image-color);
+}
+
+.signup-methods img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.spacing-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.spacing-form span {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.spacing-form hr {
+  border: 1px solid #cccbcb33;
+}
+
+.error-validation {
+  font-size: 0.8rem;
+  color: #d31225;
+}
+
+@media (max-width: 916px) {
+  .container {
+    width: 90%;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  .signup-form {
+    width: 100%;
+  }
+
+  hr {
+    width: 100px;
+  }
+
+  .create-account-button button {
+    width: 100%;
+    float: none;
+  }
+
+}

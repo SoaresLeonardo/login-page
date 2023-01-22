@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --login-image-color: #8956e9;
+  --form-login-color: #282a32;
+  --background-body: #1d1e23;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-body);
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 3px 3px 5px #1213166e;
+}
+
+.login-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+  background-color: var(--login-image-color);
+  border-radius: 3px;
+}
+
+.login-image img {
+  width: 27rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  width: 50%;
+  background-color: var(--form-login-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.input-group .input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box input {
+  border: 1px solid #cccbcb33;
+  padding: 0.8rem;
+  width: 350px;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  background: none;
+  margin-top: 0.8rem;
+  color: white;
+  outline: none;
+}
+
+.input-box input:hover {
+  border: 1px solid #7a7979;
+}
+
+.input-box label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button button {
+  background-color: var(--login-image-color);
+  color: #ffffff;
+  padding: 1.2rem;
+  width: 350px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-button button:hover {
+  background-color: #9968f5;
+}
+
+.span-message-error {
+  font-size: 0.8rem;
+  color: #d31225;
+  display: none;
+}
+
+.span-message-error img {
+  width: 15px;
+  height: 15px;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.create-account a {
+  color: var(--login-image-color);
+}
+
+.create-account a:hover {
+  color: #9968f5;
+}
+
+.login-methods {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-method-icon {
+  width: 35px;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .input-box input,
+  .login-button button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="signup-image">
+            <img src="assets/img/signup.svg" alt="Imagem de cadastro">
+        </div>
+
+        <div class="signup-form">
+            <form class="form" action="#">
+
+                <div class="title">
+                    <h1>Cadastre-se</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input id="firstname" class="firstname input-validation" type="text" placeholder="Digite seu primeiro nome">
+                        <span class="error-validation"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" class="lastname input-validation" type="text" placeholder="Digite seu sobrenome">
+                        <span class="error-validation"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Qual é o seu e-mail?</label>
+                        <input id="email" class="email input-validation" type="email" placeholder="Insira seu e-mail.">
+                        <span class="error-validation"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Crie uma senha</label>
+                        <input id="password" class="password input-validation" type="password" placeholder="Crie uma senha.">
+                        <span class="error-validation"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirm-password">Confirme sua senha</label>
+                        <input id="confirm-password" class="confirm-password input-validation" type="password"
+                            placeholder="Digite a senha novamente.">
+                        <span class="error-validation"></span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="name">Nome de usuário</label>
+                        <input id="name" class="name input-validation" type="text" placeholder="Insira um nome de usuário">
+                        <span class="error-validation"></span>
+                    </div>
+                </div>
+
+                <div class="create-account-button">
+                    <button onclick="signupButton()">Criar conta</button>
+                </div>
+            </form>
+
+            <div class="spacing-form">
+                <hr>
+                <span>ou</span>
+                <hr>
+              </div>
+            
+            <div class="signup-methods">
+                <a href="#"><img class="login-method-icon" src="assets/img/icons8-google-48.png" alt="Logo do Google"></a>
+                <a href="#"><img class="login-method-icon" src="assets/img/icons8-facebook-48.png"
+                        alt="Logo do Facebook"></a>
+                <a href="#"><img class="login-method-icon" src="assets/img/icons8-apple-logo-50.png"
+                        alt="Logo da Apple"></a>
+            </div>
+
+
+            <div class="login-account">
+                <span>
+                    Já tem uma conta?
+                    <a href="index.html">Faça login</a>.
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
